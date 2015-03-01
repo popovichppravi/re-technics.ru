@@ -84,6 +84,7 @@ font-weight: bold;
 cursor: pointer;
 text-shadow: -1px -1px 0px #630C0C;
 box-shadow: 2px 2px 1px rgba(0,0,0,0.3);
+outline: none; 
 
 }
 
@@ -100,6 +101,17 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#990300', end
 
 }
 
+.red_btn:active
+{
+	position: absolute;
+	box-shadow: none;
+	left:2px;
+	top: 2px; 
+	outline: none; 
+}
+
+
+
 .h1
 {
 	font-size: 25px;
@@ -108,7 +120,13 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#990300', end
 
 .h2
 {
-	
+font-size: 20px;
+	font-weight: bold;	
+}
+
+.h3
+{
+font-size: 18px;
 }
 
 .red_txt
@@ -415,23 +433,36 @@ width: 200px;
 background: #3B3B3B;
 min-height: 265px;
 padding: 20px 60px;
+text-align: center;
 }
 
 .first_lvl li
 {
 	display: inline-block;
+vertical-align: top;
+margin-bottom: 30px;
+width: 240px;
+margin-right: 10px;
+text-align: left;
+}
+
+.first_lvl li:last-child
+{
+	margin-right: 0;
 }
 
 .next_lvl li
 {
 display: list-item;
 color: #fff;
+margin: 0 0 3px 0;
 }
 
 .next_lvl li a
 {
 	color: #fff;
 	text-decoration: none;
+	font-size: 18px;
 }
 
 .next_lvl li a:hover
@@ -442,4 +473,54 @@ text-decoration: underline;
 .next_lvl
 {
 	list-style-type: disc;
+	margin-left: 15px;
+margin-top: 10px;
+}
+
+.tel_adr
+{
+margin-top: 10px;
+}
+
+.tel_adr p
+{
+	color: #fff;	
+	font-weight: normal;
+	font-size: 18px;
+line-height: 1.2;
+}
+
+.first_lvl
+{
+	display: inline-block;
+}
+
+.email_btn
+{
+	background: url(images/btn_email.png);
+	width: 100px;
+height: 30px;
+display: inline-block;
+background-repeat: no-repeat;
+background-size: 100px;
+padding: 18px 0px 0 3px;
+color: #fff;
+text-decoration: none;
+position: relative;
+top: -1px;
+}
+
+.email_btn:active
+{
+	left:2px;
+	top: 2px; 
+	outline: none; 
+}
+
+
+#rassilka_form input[type="text"]
+{
+width: 125px;
+display: inline-block;
+margin-right: 5px;
 }
