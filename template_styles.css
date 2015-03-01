@@ -1,0 +1,445 @@
+/* Eric Meyer's CSS Reset */
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+	font-family: Myriad Pro;
+	color: #231F20;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure,
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+/* End of Eric Meyer's CSS Reset */
+
+html {
+	height: 100%;
+}
+article, aside, details, figcaption, figure, footer, header, hgroup, main, nav, section, summary {
+	display: block;
+}
+body {
+	font: 12px/18px Arial, sans-serif;
+	width: 100%;
+	height: 100%;
+}
+.wrapper {
+	width: 1200px;
+	margin: 0 auto;
+	min-height: 100%;
+	height: auto !important;
+	height: 100%;
+	box-shadow: 0px 0px 30px rgba(0,0,0,0.5);
+}
+
+.red_btn
+{
+background: #e62929; /* Old browsers */
+background: -moz-linear-gradient(-90deg,  #e62929 0%, #990300 100%); /* FF3.6+ */
+background: -webkit-gradient(linear, left top, right bottom, color-stop(0%,#e62929), color-stop(100%,#990300)); /* Chrome,Safari4+ */
+background: -webkit-linear-gradient(-90deg,  #e62929 0%,#990300 100%); /* Chrome10+,Safari5.1+ */
+background: -o-linear-gradient(-90deg,  #e62929 0%,#990300 100%); /* Opera 11.10+ */
+background: -ms-linear-gradient(-90deg,  #e62929 0%,#990300 100%); /* IE10+ */
+background: linear-gradient(180deg,  #e62929 0%,#990300 100%); /* W3C */
+filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#e62929', endColorstr='#990300',GradientType=1 ); /* IE6-9 fallback on horizontal gradient */
+padding: 7px 10px;
+border: none;
+border-radius: 3px;
+color: #fff;
+font-weight: bold;
+cursor: pointer;
+text-shadow: -1px -1px 0px #630C0C;
+box-shadow: 2px 2px 1px rgba(0,0,0,0.3);
+
+}
+
+.red_btn:hover
+{
+	background: #990300; /* Old browsers */
+background: -moz-linear-gradient(-90deg,  #990300 0%, #e62929 100%); /* FF3.6+ */
+background: -webkit-gradient(linear, left top, right bottom, color-stop(0%,#990300), color-stop(100%,#e62929)); /* Chrome,Safari4+ */
+background: -webkit-linear-gradient(-90deg,  #990300 0%,#e62929 100%); /* Chrome10+,Safari5.1+ */
+background: -o-linear-gradient(-90deg,  #990300 0%,#e62929 100%); /* Opera 11.10+ */
+background: -ms-linear-gradient(-90deg,  #990300 0%,#e62929 100%); /* IE10+ */
+background: linear-gradient(180deg,  #990300 0%,#e62929 100%); /* W3C */
+filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#990300', endColorstr='#e62929',GradientType=1 ); /* IE6-9 fallback on horizontal gradient */
+
+}
+
+.h1
+{
+	font-size: 25px;
+	font-weight: bold;
+}
+
+.h2
+{
+	
+}
+
+.red_txt
+{
+  color: #820202;
+}
+.grey_txt
+{
+	color: #BCBEC0;
+}
+.up_txt
+{
+	text-transform: uppercase;
+}
+hr
+{
+	border: 1px solid #6D6E71;
+	border-left: none;
+	border-bottom: none;
+	border-right: none; 
+}
+
+/* Header
+-----------------------------------------------------------------------------*/
+.header {
+	height: 525px;
+	border-top: 8px solid #2E2D2E;
+}
+
+.head_top
+{
+width: 100%;
+height: 90px;
+text-align: center;
+}
+
+#logo, #top_phone
+{
+	display: inline-block;
+	vertical-align: middle;
+	text-align: right;
+}
+
+#logo img
+{
+width: 250px;
+}
+
+#tp_info span
+{
+	font-size: 17pt;
+}
+
+#tp_phone span
+{
+	font-size: 21pt;
+	font-weight: bold;
+   font-family: Arial;
+}
+
+#top_search
+{
+	display: inline-block;
+	vertical-align: middle;
+}
+
+#top_search input[type="text"]
+{
+	width: 235px;
+	padding: 5px 5px 6px 5px;
+	border-top: 2px solid #A6A7A7;
+border-left: 2px solid #A6A7A7;
+border-bottom: 1px solid #A6A7A7;
+border-right: 1px solid #A6A7A7;
+}
+
+#top_search input[type="submit"]
+{
+position: relative;
+left: -5px;
+}
+
+#top_search, #logo, #top_phone
+{
+	margin: 5px 20px;
+}
+
+#menu_top
+{
+	width: 100%;
+	background: #CA0909;
+	text-align: center;
+	padding-top: 1px;
+}
+
+#menu_top div
+{
+	display: inline-block;
+}
+
+
+#menu_top ul li
+{
+	float: left;
+	padding: 14px 0;
+	border-left: 1px solid #8A0C0A;
+}
+
+#menu_top ul li:last-child
+{
+border-right: 1px solid #8A0C0A;	
+}
+
+#menu_top ul li:last-child a
+{
+
+}
+
+#menu_top ul li a
+{
+	padding: 15px 25px;
+	color: #fff;
+	font-size: 18px;
+	text-decoration: none;
+	border-left: 1px solid #D35150;
+}
+
+#menu_top ul li a:hover
+{
+	background: #990300;
+}
+
+#menu_top ul
+{
+	display: inline-block;
+	vertical-align: middle;
+width: 100%;
+border-right: 1px solid #D35150;
+}
+
+#menu_top .top_line
+{
+	border-top: 1px solid #D55251;
+	border-bottom: 1px solid #8E1110;
+	display: block;
+}
+
+/* SLIDER */
+
+#slider {
+  margin: 0 auto 20px auto;
+  width:1200px;
+  height: 375px;
+  border-bottom: 9px solid #CA0909;
+}
+#slider #slides {
+  position:relative;
+  z-index:50;
+  width:1200px;
+  height: 375px;
+  border-radius:5px;
+}
+
+#slider .slides_container {
+	width:1200px;
+	overflow:hidden;
+	position:relative;
+	display:none;
+	height: 375px;
+}
+
+#slider .slides_container a {
+	width:1200px;
+	height: 375px;
+	display:block;
+}
+
+#slider .slides_container a img {
+	display:block;
+    width: 1200px;
+    height: 375px;
+}
+.pagination {
+  margin: -30px auto 0 auto;
+  padding: 0;
+  position:relative;
+  z-index:50;
+  width: 140px;
+  text-align: center;
+}
+.pagination li {
+  float: left;
+  margin: 0 5px;
+  padding:0;
+  list-style: none;
+  width: 15px;
+  height: 15px;
+}
+.pagination li a {
+  display:block;
+  width: 15px;
+  height: 15px;
+  font-size:0px !important;
+  line-height:0px;
+  text-decoration: none;
+  background:url(images/spr_nav.png) 100% 0 no-repeat;
+}
+
+.pagination li.current a,
+.pagination li a:hover {background:url(images/spr_nav.png) 0 0 no-repeat;}
+#slider #slides:hover .prev,
+#slider #slides:hover .next {
+  display: block;
+  width: 40px;
+  height: 74px;
+  position: absolute;
+  top: 150px;
+  z-index:100;
+  display: block;
+}
+#slider #slides .prev,
+#slider #slides .next {
+ display: none;
+}
+#slider #slides .prev {left: 0; background:url(images/spr_slider.png) 0 0 no-repeat;}
+#slider #slides .next {right:0; background:url(images/spr_slider.png) -40px 0 no-repeat;}
+
+
+
+/* Middle
+-----------------------------------------------------------------------------*/
+.content {
+	padding: 0 0 300px;
+}
+
+.main_contener
+{
+	padding: 30px 125px;
+}
+
+.main_list div
+{
+	display: block;
+position: absolute;
+}
+.main_list li 
+{
+	display: inline-block;
+text-align: center;
+height: 175px;
+width: 300px;
+margin-bottom: 30px;
+}
+.main_list a 
+{
+display: inline-block;
+font-size: 20px;
+height: 175px;
+width: 300px;
+text-decoration: none;
+}
+.main_list img {
+width: 220px;
+-webkit-transition: all 0.5s ease;
+-moz-transition: all 0.5s ease;
+-ms-transition: all 0.5s ease;
+-o-transition: all 0.5s ease;
+transition: all 0.5s ease;
+}
+
+.main_list a:hover > img {
+width: 250px;
+}
+
+
+.main_list a:active > img
+{
+width: 200px;
+}
+
+
+.div_absl
+{
+	width: 250px;
+	height: 175px;
+	position: absolute;
+}
+
+
+
+/* Footer
+-----------------------------------------------------------------------------*/
+.footer {
+	width: 1200px;
+	margin: -310px auto 0;
+	height: 270px;
+	background: #2E2D2E;
+	position: relative;
+	padding: 30px 0 10px 0;
+}
+
+#footer_middle
+{
+background: #3B3B3B;
+min-height: 265px;
+padding: 20px 60px;
+}
+
+.first_lvl li
+{
+	display: inline-block;
+}
+
+.next_lvl li
+{
+display: list-item;
+color: #fff;
+}
+
+.next_lvl li a
+{
+	color: #fff;
+	text-decoration: none;
+}
+
+.next_lvl li a:hover
+{
+text-decoration: underline;
+}
+
+.next_lvl
+{
+	list-style-type: disc;
+}
