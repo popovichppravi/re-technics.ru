@@ -111,7 +111,12 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#990300', end
 }
 
 
-
+h1 
+{
+	font-size: 25px;
+	font-weight: bold;
+    margin-bottom: 30px; 
+}
 .h1
 {
 	font-size: 25px;
@@ -360,6 +365,7 @@ border-right: 1px solid #D35150;
 -----------------------------------------------------------------------------*/
 .content {
 	padding: 0 0 300px;
+	min-height: 600px;
 }
 
 .main_contener
@@ -413,6 +419,137 @@ width: 200px;
 	width: 250px;
 	height: 175px;
 	position: absolute;
+}
+
+#left_content
+{
+	display: inline-block;
+	margin-bottom: 100px;
+	vertical-align: top;
+}
+
+.left_menu a
+{
+padding: 10px 50px;
+font-size: 20px;
+text-decoration: none;
+display: inline-block;
+width: 220px;
+background: #ffffff; /* Old browsers */
+background: -moz-linear-gradient(top,  #ffffff 0%, #f1f2f2 100%); /* FF3.6+ */
+background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,#ffffff), color-stop(100%,#f1f2f2)); /* Chrome,Safari4+ */
+background: -webkit-linear-gradient(top,  #ffffff 0%,#f1f2f2 100%); /* Chrome10+,Safari5.1+ */
+background: -o-linear-gradient(top,  #ffffff 0%,#f1f2f2 100%); /* Opera 11.10+ */
+background: -ms-linear-gradient(top,  #ffffff 0%,#f1f2f2 100%); /* IE10+ */
+background: linear-gradient(to bottom,  #ffffff 0%,#f1f2f2 100%); /* W3C */
+filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#ffffff', endColorstr='#f1f2f2',GradientType=0 ); /* IE6-9 */
+border: 1px solid #E6E7E8;
+}
+
+.left_menu a:hover
+{
+	background: #f4f5f6; /* Old browsers */
+background: -moz-linear-gradient(top,  #f4f5f6 28%, #e8e9ea 99%); /* FF3.6+ */
+background: -webkit-gradient(linear, left top, left bottom, color-stop(28%,#f4f5f6), color-stop(99%,#e8e9ea)); /* Chrome,Safari4+ */
+background: -webkit-linear-gradient(top,  #f4f5f6 28%,#e8e9ea 99%); /* Chrome10+,Safari5.1+ */
+background: -o-linear-gradient(top,  #f4f5f6 28%,#e8e9ea 99%); /* Opera 11.10+ */
+background: -ms-linear-gradient(top,  #f4f5f6 28%,#e8e9ea 99%); /* IE10+ */
+background: linear-gradient(to bottom,  #f4f5f6 28%,#e8e9ea 99%); /* W3C */
+filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#f4f5f6', endColorstr='#e8e9ea',GradientType=0 ); /* IE6-9 */
+
+}
+
+.left_menu li 
+{
+
+}
+
+.child li a 
+{
+	width: 160px;
+	padding: 10px 80px;
+}
+
+#right_content
+{
+width: 775px;
+display: inline-block;
+vertical-align: top;
+padding: 30px 40px;
+}
+
+.shoping div
+{
+	display: block;
+position: absolute;
+}
+.shoping li 
+{
+	display: inline-block;
+text-align: center;
+height: 175px;
+width: 190px;
+margin-bottom: 40px;
+}
+.shoping a 
+{
+display: inline-block;
+font-size: 16px;
+height: 175px;
+width: 190px;
+text-decoration: none;
+}
+.shoping img {
+width: 150px;
+-webkit-transition: all 0.5s ease;
+-moz-transition: all 0.5s ease;
+-ms-transition: all 0.5s ease;
+-o-transition: all 0.5s ease;
+transition: all 0.5s ease;
+}
+
+.shoping a:hover > img {
+width: 190px;
+}
+
+
+.shoping a:active > img
+{
+width: 200px;
+}
+
+.shoping .price
+{
+	position: absolute;
+right: 20px;
+top: 100px;
+background: url(images/price_bg.png);
+background-size: 90px;
+width: 90px;
+height: 25px;
+color: #fff;
+font-size: 16px;
+padding: 3px 0px 0px 0px;
+}
+
+.shoping .not_buy
+{
+	position: absolute;
+right: 20px;
+top: 100px;
+background: url(images/not_buy.png);
+background-size: 90px;
+width: 90px;
+height: 25px;
+color: #fff;
+font-size: 16px;
+padding: 3px 0px 0px 0px;
+}
+.shoping .price:after
+{
+	content:"\20B7";
+font-family: 'PT Sans', serif;
+margin-left: 4px;
 }
 
 
@@ -512,8 +649,8 @@ top: -1px;
 
 .email_btn:active
 {
-	left:2px;
-	top: 2px; 
+	left:1px;
+	top: 1px; 
 	outline: none; 
 }
 
