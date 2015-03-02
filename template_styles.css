@@ -103,7 +103,7 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#990300', end
 
 .red_btn:active
 {
-	position: absolute;
+	position: relative;
 	box-shadow: none;
 	left:2px;
 	top: 2px; 
@@ -456,7 +456,7 @@ background: -o-linear-gradient(top,  #f4f5f6 28%,#e8e9ea 99%); /* Opera 11.10+ *
 background: -ms-linear-gradient(top,  #f4f5f6 28%,#e8e9ea 99%); /* IE10+ */
 background: linear-gradient(to bottom,  #f4f5f6 28%,#e8e9ea 99%); /* W3C */
 filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#f4f5f6', endColorstr='#e8e9ea',GradientType=0 ); /* IE6-9 */
-
+color: #E8BFBF;
 }
 
 .left_menu li 
@@ -466,16 +466,16 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#f4f5f6', end
 
 .child li a 
 {
-	width: 160px;
-	padding: 10px 80px;
+	width: 200px;
+padding: 10px 40px 10px 80px;
 }
 
 #right_content
 {
-width: 775px;
+width: 800px;
 display: inline-block;
 vertical-align: top;
-padding: 30px 40px;
+padding: 30px;
 }
 
 .shoping div
@@ -550,6 +550,136 @@ padding: 3px 0px 0px 0px;
 	content:"\20B7";
 font-family: 'PT Sans', serif;
 margin-left: 4px;
+}
+
+.vid_catalog
+{
+position: absolute;
+top: -50px;
+right: 0;
+}
+
+.vid_catalog img
+{
+	width: 30px;
+	margin-right: 10px;
+}
+
+.catalog_list
+{
+	position: relative;
+}
+
+#tovar_horizontal
+{
+	position: relative;
+	border-top: 2px solid #E6E7E8;
+}
+
+#tovar_horizontal:hover
+{
+border: none;
+zoom: 1.03;
+box-shadow: 0 0px 6px rgba(0, 0, 0, .5);
+}
+
+#tovar_horizontal .img_tovar 
+{
+width: 150px;
+}
+
+#tovar_horizontal .price
+{
+	position: absolute;
+left: 40px;
+top: 100px;
+background: url(images/price_bg.png);
+background-size: 90px;
+width: 90px;
+height: 25px;
+color: #fff;
+font-size: 16px;
+padding: 3px 0px 0px 0px;
+text-align: center;
+}
+
+#tovar_horizontal .not_buy
+{
+	position: absolute;
+left: 40px;
+top: 100px;
+background: url(images/not_buy.png);
+background-size: 90px;
+width: 90px;
+height: 25px;
+color: #fff;
+font-size: 16px;
+padding: 3px 0px 0px 0px;
+text-align: center;
+}
+
+#tovar_horizontal .price:after
+{
+	content:"\20B7";
+font-family: 'PT Sans', serif;
+margin-left: 4px;
+}
+
+#tovar_horizontal a
+{
+	font-size: 16px;
+	text-decoration: none;
+	text-align: center;
+display: inline-block;
+}
+
+#tovar_horizontal table
+{
+	width: 98%;
+}
+
+#tovar_horizontal td
+{
+	vertical-align: top;
+	padding: 10px 20px;
+	position: relative;
+}
+
+.tech_ul li
+{
+font-size: 14px;
+display: inline-block;
+margin-top: 5px;
+margin-right: 10px;
+padding-left: 10px;
+width: 200px;
+vertical-align: top;
+position: relative;
+}
+.tech_ul li:last-child
+{
+margin-right: 0;
+}
+.tech_ul li::before
+{
+content: "";
+width: 5px;
+height: 5px;
+background: #000;
+border-radius: 10px;
+position: absolute;
+left: 0;
+top: 5px;
+}
+.tech_ul
+{
+margin-top: 10px;
+}
+
+#tovar_horizontal a.red_btn 
+{
+bottom: 0;
+right: 0;
 }
 
 
