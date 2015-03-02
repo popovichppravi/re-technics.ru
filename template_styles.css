@@ -682,7 +682,17 @@ bottom: 0;
 right: 0;
 }
 
+.actions img
+{
+width: 940px;
+}
 
+.actions:active > img
+{
+	position: relative;
+top: 4px;
+left: 4px;
+}
 
 /* Footer
 -----------------------------------------------------------------------------*/
